@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Oakbridge Legal Practitioners | Demo by Lrim-Tech Solutions</title>
+<meta name="description" content="Fictional law practice website and secure client portal concept by Lrim-Tech Solutions.">
+<style>
+:root{--ink:#13233b;--navy:#0b1b32;--gold:#b7934a;--cream:#f7f4ee;--white:#fff;--muted:#667085;--line:#e4e7ec;--green:#157f65;--shadow:0 18px 50px rgba(10,27,50,.12)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.6}a{text-decoration:none;color:inherit}.wrap{width:min(1120px,92%);margin:auto}.top{background:var(--navy);color:#dce5ef;font-size:13px;padding:8px 0}.top .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}header{position:sticky;top:0;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);z-index:20}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:25px}.brand{font-family:Georgia,serif;font-size:21px;font-weight:bold;letter-spacing:.6px}.brand span{color:var(--gold)}nav{display:flex;align-items:center;gap:23px;font-size:14px;font-weight:bold}.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:7px;padding:12px 18px;font-weight:bold;font-size:14px;border:1px solid transparent;cursor:pointer}.btn-gold{background:var(--gold);color:#fff}.btn-outline{border-color:#d5d9df;background:#fff;color:var(--navy)}.hero{min-height:600px;background:linear-gradient(90deg,rgba(7,20,38,.96),rgba(7,20,38,.82) 55%,rgba(7,20,38,.45)),linear-gradient(135deg,#183458,#8c774d);color:#fff;display:flex;align-items:center}.hero-inner{padding:90px 0;max-width:720px}.eyebrow{text-transform:uppercase;letter-spacing:2.4px;font-size:12px;color:#d8bd82;font-weight:bold}.hero h1{font-family:Georgia,serif;font-size:58px;line-height:1.08;margin:14px 0 20px}.hero p{font-size:19px;color:#dbe3ec;max-width:660px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}.trust{display:flex;gap:25px;flex-wrap:wrap;margin-top:38px;font-size:13px;color:#cbd5e1}.section{padding:78px 0}.section.alt{background:var(--cream)}.section-head{max-width:690px;margin-bottom:38px}.section h2{font-family:Georgia,serif;font-size:38px;line-height:1.2;margin:8px 0 12px}.section-head p{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:25px;box-shadow:0 8px 25px rgba(16,24,40,.04)}.card .num{font-family:Georgia,serif;color:var(--gold);font-size:26px}.card h3{font-family:Georgia,serif;margin:9px 0 8px;font-size:21px}.card p{color:var(--muted);font-size:14px}.portal-band{background:var(--navy);color:#fff}.portal-layout{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.portal-preview{background:#f8fafc;color:var(--ink);border-radius:16px;padding:20px;box-shadow:var(--shadow)}.portal-bar{display:flex;justify-content:space-between;align-items:center;padding:8px 4px 18px;border-bottom:1px solid var(--line)}.matter{margin-top:15px;border:1px solid var(--line);border-radius:10px;padding:16px;background:#fff}.status{display:inline-block;padding:5px 9px;border-radius:20px;background:#e7f6f1;color:var(--green);font-size:11px;font-weight:bold}.features{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:15px}.mini{background:#fff;border:1px solid var(--line);border-radius:9px;padding:13px;font-size:13px}.contact{display:grid;grid-template-columns:.85fr 1.15fr;gap:35px}.contact-box{background:var(--navy);color:#fff;border-radius:13px;padding:30px}.contact-box p{color:#d2dae5}.form{border:1px solid var(--line);border-radius:13px;padding:28px}.row{display:grid;grid-template-columns:1fr 1fr;gap:13px}label{display:block;font-size:12px;font-weight:bold;margin:0 0 5px}input,select,textarea{width:100%;padding:12px;border:1px solid #ccd2da;border-radius:7px;font:inherit;margin-bottom:14px}textarea{min-height:110px;resize:vertical}.notice{font-size:12px;color:var(--muted)}footer{background:#071426;color:#b9c4d2;padding:32px 0;font-size:13px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.demo-pill{position:fixed;right:16px;bottom:16px;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);padding:9px 12px;border-radius:20px;font-size:11px;z-index:30}.modal{display:none;position:fixed;inset:0;background:rgba(4,12,24,.75);z-index:50;align-items:center;justify-content:center;padding:20px}.modal.open{display:flex}.login{width:min(440px,100%);background:#fff;border-radius:15px;padding:28px;position:relative}.close{position:absolute;right:16px;top:12px;border:0;background:none;font-size:25px;cursor:pointer}.login h2{font-family:Georgia,serif;margin-top:0}.tabs{display:flex;gap:8px;margin:18px 0}.tab{flex:1;padding:10px;border:1px solid var(--line);background:#fff;border-radius:7px;font-weight:bold;cursor:pointer}.tab.active{background:var(--navy);color:#fff}.demo-login{background:#f7f4ee;border-radius:8px;padding:11px;font-size:12px;margin:8px 0 15px}.dashboard{display:none;position:fixed;inset:0;background:#f3f5f8;z-index:60;overflow:auto}.dashboard.open{display:block}.dash-head{background:var(--navy);color:#fff;padding:18px 0}.dash-nav{display:flex;justify-content:space-between;align-items:center}.dash-grid{display:grid;grid-template-columns:220px 1fr;gap:22px;padding:25px 0}.side,.dash-main{background:#fff;border:1px solid var(--line);border-radius:12px}.side{padding:15px;height:max-content}.side a{display:block;padding:10px;border-radius:7px;font-size:13px}.side a:first-child{background:var(--cream);font-weight:bold}.dash-main{padding:24px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.stat{border:1px solid var(--line);border-radius:9px;padding:16px}.stat b{display:block;font-size:24px;font-family:Georgia,serif}.activity{margin-top:20px}.activity-item{padding:14px 0;border-bottom:1px solid var(--line);font-size:14px}.fake{font-size:11px;color:#b42318;background:#fff1f0;border-radius:5px;padding:4px 7px}.menu{display:none}@media(max-width:800px){nav a:not(.btn){display:none}.grid{grid-template-columns:1fr 1fr}.portal-layout,.contact{grid-template-columns:1fr}.hero h1{font-size:43px}.dash-grid{grid-template-columns:1fr}.side{display:none}}@media(max-width:520px){.grid,.row,.stats{grid-template-columns:1fr}.hero h1{font-size:37px}.hero{min-height:520px}.section{padding:55px 0}.features{grid-template-columns:1fr}.top{display:none}.brand{font-size:17px}}
+</style>
+<style>.livebar{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}.livebtn{border:0;border-radius:8px;padding:11px 15px;font-weight:700;cursor:pointer;background:#b8943f;color:#fff}.livebtn.secondary{background:#10233e}.livepanel{background:#fff;border:1px solid #e1e5ea;border-radius:12px;padding:18px;margin:14px 0}.livegrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.liveitem{border:1px solid #e2e6eb;border-radius:9px;padding:13px;margin:9px 0}.liveitem h4{margin:0 0 6px;color:#10233e}.pill{display:inline-block;padding:4px 8px;border-radius:999px;background:#edf3fb;color:#315d8d;font-size:11px;font-weight:700}.prog{height:6px;background:#edf0f3;border-radius:9px;overflow:hidden;margin-top:9px}.prog i{display:block;height:100%;background:#b8943f}.liveform{display:grid;grid-template-columns:1fr 1fr;gap:10px}.liveform label{font-size:12px;font-weight:700}.liveform input,.liveform select,.liveform textarea{width:100%;box-sizing:border-box;padding:9px;border:1px solid #ccd3da;border-radius:7px;margin-top:4px}.full{grid-column:1/-1}.lawyerTools{display:none}.lawyerTools.on{display:block}.clientOnly.off{display:none}@media(max-width:700px){.livegrid,.liveform{grid-template-columns:1fr}.full{grid-column:auto}}.staffrole{font-size:11px;font-weight:700;padding:4px 8px;border-radius:999px;background:#f5edd9;color:#72591d;display:inline-block}
+.staffstatus{font-size:11px;font-weight:700;padding:4px 8px;border-radius:999px;background:#eaf6ed;color:#327043;display:inline-block}
+.staffstatus.inactive{background:#f1f2f4;color:#68717d}
+.permission-note{font-size:12px;color:#687386;margin-top:8px}
+.staff-actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}
+.staff-actions button{padding:7px 10px;border:1px solid #ccd3da;background:#fff;border-radius:7px;cursor:pointer;font-weight:700;color:#10233e}
+.staff-actions button.danger{color:#9b352e}
+@media(max-width:700px){.staff-actions{display:grid;grid-template-columns:1fr 1fr}}
+
+.pro-shell{display:grid;grid-template-columns:235px minmax(0,1fr);gap:0;margin-top:18px;min-height:610px;border:1px solid #dfe4e9;border-radius:14px;overflow:hidden;background:#f6f7f9;box-shadow:0 7px 28px rgba(8,27,49,.08)}
+.pro-side{background:#081a30;color:#d9e0e8;padding:20px 14px;display:flex;flex-direction:column}
+.pro-side-brand{padding:3px 10px 18px;border-bottom:1px solid rgba(255,255,255,.11);margin-bottom:14px}
+.pro-side-brand strong{display:block;color:#fff;font-family:Georgia,serif;font-size:17px}
+.pro-side-brand small{color:#9eabb9}
+.pro-menu{display:flex;flex-direction:column;gap:5px}
+.pro-menu button{border:0;background:transparent;color:#cbd4de;text-align:left;padding:11px 12px;border-radius:8px;cursor:pointer;font-weight:700;font-size:13px}
+.pro-menu button:hover,.pro-menu button.active{background:#17314f;color:#fff}
+.pro-menu .admin-link{margin-top:12px;border-top:1px solid rgba(255,255,255,.1);padding-top:15px}
+.pro-side-footer{margin-top:auto;padding:18px 10px 2px;color:#8997a7;font-size:11px;line-height:1.5}
+.pro-main{padding:22px;min-width:0}
+.pro-page{display:none}.pro-page.active{display:block}
+.pro-page-head{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-bottom:15px}
+.pro-page-head h3{margin:0;font:700 23px Georgia,serif;color:#10233e}
+.pro-page-head p{margin:4px 0 0;color:#6e7885;font-size:13px}
+.quick-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}
+.quick-card{background:#fff;border:1px solid #e0e4e9;border-radius:10px;padding:15px}
+.quick-card small{display:block;color:#75808d;font-size:10px;font-weight:800;letter-spacing:.06em}
+.quick-card strong{display:block;color:#10233e;font-size:23px;margin-top:5px}
+.pro-placeholder{background:#fff;border:1px solid #e0e4e9;border-radius:10px;padding:18px}
+.pro-placeholder h4{margin:0 0 8px;color:#10233e}
+.pro-placeholder p{color:#687386;margin:0 0 12px}
+.pro-list{display:grid;gap:9px}
+.pro-list-item{border:1px solid #e5e8ec;border-radius:8px;padding:11px;background:#fff}
+@media(max-width:850px){.pro-shell{grid-template-columns:1fr}.pro-side{padding:12px}.pro-side-brand,.pro-side-footer{display:none}.pro-menu{display:flex;flex-direction:row;overflow:auto}.pro-menu button{white-space:nowrap}.pro-menu .admin-link{margin-top:0;border-top:0;padding-top:11px}.quick-grid{grid-template-columns:repeat(2,1fr)}.pro-main{padding:15px}}
+</style></head>
+<body>
+<div class="top"><div class="wrap"><span>Fictional demonstration practice · Zimbabwe</span><span>Confidentiality · Clarity · Professional service</span></div></div>
+<header><div class="wrap nav"><a class="brand" href="#home"><span>OAKBRIDGE</span> LEGAL PRACTITIONERS</a><nav><a href="#practice">Practice Areas</a><a href="#about">About</a><a href="#portal">Client Portal</a><a href="#contact">Contact</a><button class="btn btn-outline" onclick="openLogin()">Portal Login</button></nav></div></header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-inner"><div class="eyebrow">Clarity · Counsel · Confidence</div><h1>Legal counsel built around your next move.</h1><p>Practical, responsive legal support for individuals, families and businesses—delivered with discretion, clear communication and attention to every matter.</p><div class="actions"><a class="btn btn-gold" href="#contact">Request a Consultation</a><button class="btn btn-outline" onclick="openLogin()">Open Client Portal</button></div><div class="trust"><span>✓ Secure client communication</span><span>✓ Matter progress visibility</span><span>✓ Digital document access</span></div></div></section>
+<section class="section" id="practice"><div class="wrap"><div class="section-head"><div class="eyebrow">Practice Areas</div><h2>Focused counsel for everyday and complex matters.</h2><p>The demonstration uses practice areas commonly presented by Zimbabwean full-service firms and can be customised to the lawyer's actual areas of practice.</p></div><div class="grid">
+<div class="card"><div class="num">01</div><h3>Corporate & Commercial</h3><p>Contracts, company matters, governance, transactions and practical business advisory.</p></div>
+<div class="card"><div class="num">02</div><h3>Litigation & Dispute Resolution</h3><p>Strategic representation, negotiation and dispute management from initial advice through resolution.</p></div>
+<div class="card"><div class="num">03</div><h3>Conveyancing & Property</h3><p>Property transactions, transfers, leases, due diligence and related property documentation.</p></div>
+<div class="card"><div class="num">04</div><h3>Labour & Employment</h3><p>Employment agreements, workplace processes, disputes and representation.</p></div>
+<div class="card"><div class="num">05</div><h3>Family Law & Estates</h3><p>Family matters, wills, estate planning and administration handled with discretion.</p></div>
+<div class="card"><div class="num">06</div><h3>Notarial & Legal Documents</h3><p>Document preparation, authentication and other professional legal documentation services.</p></div>
+</div></div></section>
+<section class="section alt" id="about"><div class="wrap portal-layout"><div><div class="eyebrow">The Firm</div><h2>A modern practice without losing the human relationship.</h2><p>Oakbridge is a fictional demonstration firm created to show how a legal practice can combine a professional public website with a secure digital client experience.</p><p style="color:var(--muted)">The final system can be branded around the real firm's practitioners, credentials, locations, services and preferred client workflow.</p><a href="#contact" class="btn btn-gold">Speak With the Firm</a></div><div class="card"><h3>Designed around client service</h3><p>Clients should not have to call the office simply to know whether a document was received, when an appointment is scheduled or whether their matter has moved to the next stage.</p><hr style="border:0;border-top:1px solid var(--line);margin:20px 0"><b>Website + Client Portal + Lawyer Dashboard</b><p>A single digital system can keep public enquiries, appointments, matters, documents and updates organised.</p></div></div></section>
+<section class="section portal-band" id="portal"><div class="wrap portal-layout"><div><div class="eyebrow">Oakbridge Client Portal</div><h2>Your matter. Your documents. Your updates.</h2><p style="color:#ccd6e3">A secure client area can give authorised clients one place to follow their matter, see appointments, access shared documents, receive updates and communicate with the practice.</p><div class="actions"><button class="btn btn-gold" onclick="openLogin()">Try Demo Portal</button></div><p style="font-size:12px;color:#9fb0c4">Demo only. A production legal portal requires authenticated access, private storage, access controls and the firm's approved privacy/security processes.</p></div><div class="portal-preview"><div class="portal-bar"><b>Welcome, T. Client</b><span class="status">Matter Active</span></div><div class="matter"><small>MATTER OB-2026-014</small><h3 style="margin:4px 0">Property Transfer</h3><p style="font-size:13px;color:var(--muted)">Latest update: Documents received and under review.</p></div><div class="features"><div class="mini"><b>3</b><br>Shared Documents</div><div class="mini"><b>12 Oct</b><br>Next Appointment</div><div class="mini"><b>2</b><br>Recent Updates</div><div class="mini"><b>1</b><br>Open Invoice</div></div></div></div></section>
+<section class="section" id="contact"><div class="wrap contact"><div class="contact-box"><div class="eyebrow">Consultation</div><h2>Tell us how we can assist.</h2><p>This is demonstration contact information. When adapted for a real practice, this panel would contain the firm's verified address, phone, email and business hours.</p><p><b>Oakbridge Legal Practitioners</b><br>Harare, Zimbabwe<br>Monday–Friday · 08:00–17:00</p><p class="notice" style="color:#aebccc">Do not submit real confidential legal information through this demo.</p></div><form class="form" onsubmit="demoSubmit(event)"><div class="row"><div><label>Full Name</label><input required placeholder="Your name"></div><div><label>Phone / Email</label><input required placeholder="Your contact"></div></div><label>Nature of Enquiry</label><select><option>Corporate & Commercial</option><option>Litigation / Dispute</option><option>Property / Conveyancing</option><option>Labour / Employment</option><option>Family / Estates</option><option>Other</option></select><label>Brief Message</label><textarea placeholder="Please avoid sensitive information in this demonstration."></textarea><button class="btn btn-gold" type="submit">Send Demo Enquiry</button><p id="formMsg" class="notice"></p></form></div></section>
+</main>
+<footer><div class="wrap foot"><div><b>OAKBRIDGE LEGAL PRACTITIONERS</b><br>Fictional demonstration identity</div><div>Digital solution by <b>Lrim-Tech Solutions</b><br>Website · Client Portal · Practice Dashboard</div></div></footer>
+<div class="demo-pill">DEMO · Built by Lrim-Tech Solutions</div>
+<div class="modal" id="loginModal"><div class="login"><button class="close" onclick="closeLogin()">×</button><div class="eyebrow">Secure Portal Demo</div><h2>Welcome back.</h2><div class="tabs"><button class="tab active" id="clientTab" onclick="setRole('client')">Client</button><button class="tab" id="lawyerTab" onclick="setRole('lawyer')">Lawyer</button></div><div class="demo-login">Presentation mode: no real credentials are required. Click <b>Enter Demo Portal</b>.</div><label>Email</label><input id="email" value="client@oakbridge.demo"><label>Password</label><input type="password" value="demoonly"><button class="btn btn-gold" style="width:100%" onclick="enterPortal()">Enter Demo Portal</button><p class="notice">Production access would use real authentication, role permissions and private data—not this demonstration login.</p></div></div>
+<div class="dashboard" id="dashboard"><div class="dash-head"><div class="wrap dash-nav"><b id="dashBrand">Oakbridge Client Portal</b><button class="btn btn-outline" onclick="exitPortal()">Exit Demo</button></div></div><div class="wrap" style="padding:24px 0 40px"><span class="fake">INTERACTIVE DEMONSTRATION DATA</span><h2 id="dashTitle">Client Portal</h2><p style="color:var(--muted)">Changes made in Lawyer View are immediately reflected in Client View on this browser.</p><div class="livebar"><button class="livebtn secondary" onclick="showClientView()">Client View</button><button class="livebtn" onclick="showLawyerView()">Lawyer View</button><select id="demoClient" onchange="renderClient()" style="padding:10px;border:1px solid #ccd3da;border-radius:8px"></select></div><div id="liveStats" class="livegrid"></div><div id="clientArea"><div class="livepanel"><h3>My Matters</h3><div id="clientMatterList"></div></div><div class="livegrid"><div class="livepanel"><h3>Recent Updates</h3><div id="clientUpdates"></div></div><div class="livepanel"><h3>Appointments</h3><div id="clientAppointments"></div></div><div class="livepanel"><h3>Documents & Invoices</h3><div id="clientDocs"></div></div></div></div><div id="lawyerArea" class="lawyerTools">
+<div class="pro-shell">
+<aside class="pro-side">
+  <div class="pro-side-brand"><strong>Oakbridge</strong><small>Practice Management</small></div>
+  <nav class="pro-menu">
+    <button class="active" data-page="overview" onclick="showProPage('overview',this)">Dashboard</button>
+    <button data-page="matters" onclick="showProPage('matters',this)">Matters</button>
+    <button data-page="clients" onclick="showProPage('clients',this)">Clients</button>
+    <button data-page="calendar" onclick="showProPage('calendar',this)">Calendar</button>
+    <button data-page="documents" onclick="showProPage('documents',this)">Documents</button>
+    <button data-page="messages" onclick="showProPage('messages',this)">Messages</button>
+    <button data-page="billing" onclick="showProPage('billing',this)">Billing</button>
+    <button class="admin-link" data-page="administration" onclick="showProPage('administration',this)">Administration</button>
+  </nav>
+  <div class="pro-side-footer">Demo staff account<br><b style="color:#fff">Partner / Administrator</b><br><br>Digital solution by Lrim-Tech Solutions</div>
+</aside>
+<main class="pro-main">
+  <section id="pro-overview" class="pro-page active">
+    <div class="pro-page-head"><div><h3>Practice Dashboard</h3><p>Overview of current legal work and practice activity.</p></div><button class="livebtn" onclick="showProPage('matters');document.getElementById('mTitle').focus()">+ New Matter</button></div>
+    <div id="proOverviewStats" class="quick-grid"></div>
+    <div class="livegrid">
+      <div class="livepanel"><h3>Recent Matters</h3><div id="proRecentMatters"></div></div>
+      <div class="livepanel"><h3>Upcoming Appointments</h3><div id="proUpcoming"></div></div>
+    </div>
+  </section>
+
+  <section id="pro-matters" class="pro-page">
+    <div class="pro-page-head"><div><h3>Matters</h3><p>Create and manage legal matters and client-visible progress updates.</p></div></div>
+    <div class="livepanel"><h3>Add a New Legal Matter</h3><form id="matterForm" class="liveform"><div><label>Client<select id="mClient"></select></label></div><div><label>Matter reference<input id="mRef" required></label></div><div class="full"><label>Matter title<input id="mTitle" required placeholder="e.g. Commercial Lease Review"></label></div><div><label>Practice area<select id="mArea"><option>Corporate & Commercial</option><option>Litigation & Dispute Resolution</option><option>Property & Conveyancing</option><option>Employment & Labour</option><option>Family Law & Estates</option><option>General Advisory</option></select></label></div><div><label>Status<select id="mStatus"><option>New Instruction</option><option>In Progress</option><option>Awaiting Client</option><option>Awaiting Court</option><option>Review</option></select></label></div><div><label>Progress %<input id="mProgress" type="number" min="0" max="100" value="10"></label></div><div><label>Responsible lawyer<input id="mLawyer" value="Adv. T. Ndlovu"></label></div><div class="full"><label>First client-visible update<textarea id="mUpdate" placeholder="Matter opened and initial documents received."></textarea></label></div><div class="full"><button class="livebtn" type="submit">Create Matter</button></div></form></div>
+    <div class="livepanel"><h3>Manage Existing Matters</h3><div id="lawyerMatterList"></div></div>
+  </section>
+
+  <section id="pro-clients" class="pro-page"><div class="pro-page-head"><div><h3>Clients</h3><p>Client directory and matter relationships.</p></div></div><div class="livepanel"><div id="proClients"></div></div></section>
+  <section id="pro-calendar" class="pro-page"><div class="pro-page-head"><div><h3>Calendar</h3><p>Consultations, hearings, deadlines and practice appointments.</p></div></div><div class="livepanel"><div id="proCalendar"></div></div></section>
+  <section id="pro-documents" class="pro-page"><div class="pro-page-head"><div><h3>Documents</h3><p>Client and matter documents. Production files would use private secured storage.</p></div></div><div class="livepanel"><div id="proDocuments"></div></div></section>
+  <section id="pro-messages" class="pro-page"><div class="pro-page-head"><div><h3>Messages</h3><p>Secure matter communications between the practice and clients.</p></div></div><div class="pro-placeholder"><h4>Secure Messages</h4><p>This demo shows the planned workspace. In production, conversations would be permission-controlled and linked to the relevant matter.</p><div class="pro-list"><div class="pro-list-item"><b>Tariro Moyo</b><br><small>Property Transfer · “Thank you, I will bring the certified documents.”</small></div><div class="pro-list-item"><b>Nyasha Holdings (Pvt) Ltd</b><br><small>Supplier Agreement · “Please confirm the clauses discussed in our meeting.”</small></div></div></div></section>
+  <section id="pro-billing" class="pro-page"><div class="pro-page-head"><div><h3>Billing</h3><p>Invoices and client account status.</p></div></div><div class="livepanel"><div id="proBilling"></div></div></section>
+
+  <section id="pro-administration" class="pro-page">
+    <div class="pro-page-head"><div><h3>Administration</h3><p>Visible only to staff accounts with administrative permission.</p></div></div>
+    <div class="livepanel"><h3>Staff & Role Administration</h3><p style="color:var(--muted)">Invite staff, assign a role and deactivate access. In production, each person receives a secure activation invitation and creates their own password.</p><div class="livegrid" id="staffStats"></div></div>
+    <div class="livepanel"><h3>Invite Staff Member</h3><form id="staffForm" class="liveform"><div><label>Full name<input id="stName" required placeholder="e.g. Jane Mlambo"></label></div><div><label>Work email<input id="stEmail" type="email" required placeholder="jane@lawfirm.co.zw"></label></div><div><label>Role<select id="stRole"><option>Partner / Administrator</option><option>Lawyer</option><option>Paralegal</option><option>Secretary / Reception</option><option>Accounts</option></select></label></div><div><label>Access scope<select id="stScope"><option>Assigned matters only</option><option>All practice matters</option><option>Appointments & enquiries only</option><option>Billing & invoices only</option></select></label></div><div class="full"><label>Position / notes<input id="stNotes" placeholder="Optional title or department"></label></div><div class="full"><button class="livebtn" type="submit">Send Demo Invitation</button></div></form><p class="permission-note">Demo only: no email is sent. The live system would send a secure activation link.</p></div>
+    <div class="livepanel"><h3>Current Staff</h3><div id="staffList"></div></div>
+  </section>
+</main>
+</div>
+</div></div></div></div><script>
+var K='oakbridgeLiveDemo1',role='client';var seed={clients:[{id:'c1',name:'Tariro Moyo'},{id:'c2',name:'Farai Dube'},{id:'c3',name:'Nyasha Holdings (Pvt) Ltd'}],matters:[{id:'m1',client:'c1',ref:'OB/2026/001',title:'Residential Property Transfer',area:'Property & Conveyancing',status:'In Progress',progress:65,lawyer:'Adv. T. Ndlovu'},{id:'m2',client:'c1',ref:'OB/2026/002',title:'Estate Administration',area:'Family Law & Estates',status:'Awaiting Client',progress:35,lawyer:'Adv. R. Chirwa'},{id:'m3',client:'c2',ref:'OB/2026/003',title:'Employment Contract Dispute',area:'Employment & Labour',status:'Review',progress:55,lawyer:'Adv. T. Ndlovu'},{id:'m4',client:'c3',ref:'OB/2026/004',title:'Supplier Agreement Review',area:'Corporate & Commercial',status:'In Progress',progress:45,lawyer:'Adv. R. Chirwa'}],updates:[{matter:'m1',date:'2026-10-06',text:'Draft transfer documents reviewed. Preparing the next filing step.'},{matter:'m2',date:'2026-10-05',text:'Please provide the outstanding certified identification documents.'},{matter:'m3',date:'2026-10-04',text:'Employer response received and is under review.'},{matter:'m4',date:'2026-10-03',text:'Initial agreement review completed; clauses requiring revision identified.'}],appointments:[{client:'c1',date:'2026-10-09',time:'10:00',text:'Property matter consultation'},{client:'c2',date:'2026-10-12',time:'14:30',text:'Case strategy meeting'},{client:'c3',date:'2026-10-08',time:'11:30',text:'Contract review meeting'}],docs:[{client:'c1',text:'Property Transfer Checklist.pdf'},{client:'c1',text:'Estate Document Requirements.pdf'},{client:'c2',text:'Employment Matter Summary.pdf'},{client:'c3',text:'Agreement Review Notes.pdf'}],invoices:[{client:'c1',text:'INV-2026-052 · US$180 · Due'},{client:'c3',text:'INV-2026-057 · US$320 · Due'}],staff:[
+{id:'st1',name:'Adv. T. Ndlovu',email:'t.ndlovu@oakbridge.demo',role:'Partner / Administrator',scope:'All practice matters',status:'Active',notes:'Managing Partner'},
+{id:'st2',name:'Adv. R. Chirwa',email:'r.chirwa@oakbridge.demo',role:'Lawyer',scope:'Assigned matters only',status:'Active',notes:'Associate Lawyer'},
+{id:'st3',name:'K. Mupfumi',email:'k.mupfumi@oakbridge.demo',role:'Secretary / Reception',scope:'Appointments & enquiries only',status:'Active',notes:'Client Services'},
+{id:'st4',name:'P. Ncube',email:'p.ncube@oakbridge.demo',role:'Accounts',scope:'Billing & invoices only',status:'Active',notes:'Accounts'}
+]};function clone(x){return JSON.parse(JSON.stringify(x))}function load(){try{return JSON.parse(localStorage.getItem(K))||clone(seed)}catch(x){return clone(seed)}}var db=load();
+if(!db.staff){db.staff=clone(seed.staff);try{localStorage.setItem(K,JSON.stringify(db))}catch(x){}}
+function save(){try{localStorage.setItem(K,JSON.stringify(db))}catch(x){}}function esc(s){var d=document.createElement('div');d.textContent=s==null?'':s;return d.innerHTML}function cname(id){for(var i=0;i<db.clients.length;i++)if(db.clients[i].id===id)return db.clients[i].name;return 'Client'}
+function openLogin(){document.getElementById('loginModal').classList.add('open')}function closeLogin(){document.getElementById('loginModal').classList.remove('open')}function setRole(r){role=r;document.getElementById('clientTab').classList.toggle('active',r==='client');document.getElementById('lawyerTab').classList.toggle('active',r==='lawyer');document.getElementById('email').value=r==='client'?'client@oakbridge.demo':'lawyer@oakbridge.demo'}function enterPortal(){closeLogin();document.getElementById('dashboard').classList.add('open');populate();if(role==='lawyer')showLawyerView();else showClientView()}function exitPortal(){document.getElementById('dashboard').classList.remove('open')}function demoSubmit(ev){ev.preventDefault();document.getElementById('formMsg').textContent='Demo enquiry captured. No information has been transmitted.'}
+function populate(){var o='';for(var i=0;i<db.clients.length;i++)o+='<option value="'+db.clients[i].id+'">'+esc(db.clients[i].name)+'</option>';document.getElementById('demoClient').innerHTML=o;document.getElementById('mClient').innerHTML=o;document.getElementById('mRef').value='OB/2026/'+('00'+(db.matters.length+1)).slice(-3)}function showClientView(){document.getElementById('lawyerArea').className='lawyerTools';document.getElementById('clientArea').className='';document.getElementById('dashBrand').textContent='Oakbridge Client Portal';document.getElementById('dashTitle').textContent='Client Portal';renderClient()}function showLawyerView(){document.getElementById('clientArea').className='clientOnly off';document.getElementById('lawyerArea').className='lawyerTools on';document.getElementById('dashBrand').textContent='Oakbridge Practice Dashboard';document.getElementById('dashTitle').textContent='Lawyer Dashboard';showProPage('overview');renderLawyer();renderStaff();renderProfessionalPanels()}
+function showProPage(page,btn){var pages=document.querySelectorAll('.pro-page');for(var i=0;i<pages.length;i++)pages[i].classList.remove('active');var el=document.getElementById('pro-'+page);if(el)el.classList.add('active');var bs=document.querySelectorAll('.pro-menu button');for(var j=0;j<bs.length;j++)bs[j].classList.remove('active');if(btn)btn.classList.add('active');else{var match=document.querySelector('.pro-menu button[data-page="'+page+'"]');if(match)match.classList.add('active')}if(page==='administration')renderStaff();renderProfessionalPanels()}
+function renderClient(){var cid=document.getElementById('demoClient').value||db.clients[0].id,ms=db.matters.filter(function(m){return m.client===cid}),ups=db.updates.filter(function(u){return ms.some(function(m){return m.id===u.matter})}),aps=db.appointments.filter(function(a){return a.client===cid}),docs=db.docs.filter(function(d){return d.client===cid}),inv=db.invoices.filter(function(i){return i.client===cid});document.getElementById('liveStats').innerHTML='<div class="livepanel"><small>ACTIVE MATTERS</small><h2>'+ms.length+'</h2></div><div class="livepanel"><small>DOCUMENTS</small><h2>'+docs.length+'</h2></div><div class="livepanel"><small>APPOINTMENTS</small><h2>'+aps.length+'</h2></div>';document.getElementById('clientMatterList').innerHTML=ms.map(function(m){return '<div class="liveitem"><span class="pill">'+esc(m.status)+'</span><h4>'+esc(m.title)+'</h4><small>'+esc(m.ref)+' · '+esc(m.area)+' · '+esc(m.lawyer)+'</small><div class="prog"><i style="width:'+m.progress+'%"></i></div><small>'+m.progress+'% progress</small></div>'}).join('')||'No matters yet.';document.getElementById('clientUpdates').innerHTML=ups.map(function(u){return '<div class="liveitem">'+esc(u.text)+'<br><small>'+esc(u.date)+'</small></div>'}).join('')||'No updates yet.';document.getElementById('clientAppointments').innerHTML=aps.map(function(a){return '<div class="liveitem"><b>'+esc(a.date)+' · '+esc(a.time)+'</b><br>'+esc(a.text)+'</div>'}).join('')||'No appointments.';document.getElementById('clientDocs').innerHTML=docs.map(function(d){return '<div class="liveitem">Document: '+esc(d.text)+'</div>'}).join('')+inv.map(function(i){return '<div class="liveitem">Invoice: '+esc(i.text)+'</div>'}).join('')}
+function renderLawyer(){document.getElementById('liveStats').innerHTML='<div class="livepanel"><small>ACTIVE MATTERS</small><h2>'+db.matters.length+'</h2></div><div class="livepanel"><small>CLIENTS</small><h2>'+db.clients.length+'</h2></div><div class="livepanel"><small>APPOINTMENTS</small><h2>'+db.appointments.length+'</h2></div>';document.getElementById('lawyerMatterList').innerHTML=db.matters.map(function(m){return '<div class="liveitem"><span class="pill">'+esc(m.status)+'</span><h4>'+esc(m.ref)+' · '+esc(m.title)+'</h4><small>'+esc(cname(m.client))+' · '+esc(m.area)+' · '+m.progress+'%</small><div class="liveform" style="margin-top:10px"><div><label>Status<select id="s_'+m.id+'"><option>New Instruction</option><option>In Progress</option><option>Awaiting Client</option><option>Awaiting Court</option><option>Review</option><option>Completed</option></select></label></div><div><label>Progress %<input id="p_'+m.id+'" type="number" min="0" max="100" value="'+m.progress+'"></label></div><div class="full"><label>Client-visible update<textarea id="u_'+m.id+'"></textarea></label></div><div class="full"><button class="livebtn" onclick="updateMatter(\''+m.id+'\')">Save Update</button></div></div></div>'}).join('');db.matters.forEach(function(m){var s=document.getElementById('s_'+m.id);if(s)s.value=m.status})}function updateMatter(id){var m=db.matters.find(function(x){return x.id===id});m.status=document.getElementById('s_'+id).value;m.progress=Math.max(0,Math.min(100,Number(document.getElementById('p_'+id).value)||0));var t=document.getElementById('u_'+id).value.trim();if(t)db.updates.unshift({matter:id,date:new Date().toISOString().slice(0,10),text:t});save();renderLawyer();alert('Saved. Switch to Client View to see the change.')}
+
+
+function renderProfessionalPanels(){
+ if(!document.getElementById('proOverviewStats'))return;
+ var active=db.matters.filter(function(m){return !/completed|closed/i.test(m.status||'')}).length;
+ var staffActive=(db.staff||[]).filter(function(s){return s.status==='Active'}).length;
+ document.getElementById('proOverviewStats').innerHTML=
+ '<div class="quick-card"><small>ACTIVE MATTERS</small><strong>'+active+'</strong></div>'+
+ '<div class="quick-card"><small>CLIENTS</small><strong>'+db.clients.length+'</strong></div>'+
+ '<div class="quick-card"><small>UPCOMING APPOINTMENTS</small><strong>'+db.appointments.length+'</strong></div>'+
+ '<div class="quick-card"><small>STAFF ACCOUNTS</small><strong>'+staffActive+'</strong></div>';
+
+ function cid(x){return x.clientId||x.client||''}
+ function cname(id){
+   var c=db.clients.find(function(x){return x.id===id});
+   return c?c.name:'Client';
+ }
+ function appointmentLabel(a){
+   if(a.text)return a.text;
+   var bits=[];
+   if(a.date)bits.push(a.date+(a.time?' · '+a.time:''));
+   if(a.type)bits.push(a.type);
+   if(a.location)bits.push(a.location);
+   return bits.join(' · ')||'Scheduled appointment';
+ }
+
+ var recent=db.matters.slice().sort(function(a,b){
+   return String(b.opened||b.created_at||b.id||'').localeCompare(String(a.opened||a.created_at||a.id||''));
+ }).slice(0,4);
+
+ document.getElementById('proRecentMatters').innerHTML=recent.length?recent.map(function(m){
+   return '<div class="liveitem"><div style="display:flex;justify-content:space-between;gap:10px;align-items:flex-start">'+
+   '<div><h4>'+esc(m.title)+'</h4><small>'+esc(cname(cid(m)))+' · '+esc(m.ref||'')+' · '+esc(m.area||'')+'</small></div>'+
+   '<span class="staffrole">'+esc(m.status||'Active')+'</span></div>'+
+   '<div style="height:5px;background:#edf0f3;border-radius:99px;margin-top:10px;overflow:hidden"><div style="height:100%;width:'+Math.max(0,Math.min(100,+m.progress||0))+'%;background:#b99642"></div></div>'+
+   '<small>'+esc(m.progress||0)+'% progress</small></div>';
+ }).join(''):'<div class="portal-empty">No matters yet.</div>';
+
+ var upcoming=db.appointments.slice().sort(function(a,b){
+   return String((a.date||'')+' '+(a.time||'')).localeCompare(String((b.date||'')+' '+(b.time||'')));
+ }).slice(0,3);
+
+ document.getElementById('proUpcoming').innerHTML=upcoming.length?upcoming.map(function(a){
+   return '<div class="liveitem"><h4>'+esc(a.type||a.text||'Appointment')+'</h4>'+
+   '<small>'+esc(cname(cid(a)))+(a.date?' · '+esc(a.date):'')+(a.time?' at '+esc(a.time):'')+
+   (a.location?'<br>'+esc(a.location):'')+'</small></div>';
+ }).join(''):'<div class="portal-empty">No upcoming appointments.</div>';
+
+ var pc=document.getElementById('proClients');
+ if(pc)pc.innerHTML=db.clients.map(function(c){
+   var count=db.matters.filter(function(m){return cid(m)===c.id}).length;
+   return '<div class="liveitem"><h4>'+esc(c.name)+'</h4><small>'+count+' matter'+(count===1?'':'s')+' on file'+(c.email?' · '+esc(c.email):'')+'</small></div>';
+ }).join('');
+
+ var cal=document.getElementById('proCalendar');
+ if(cal)cal.innerHTML=db.appointments.length?db.appointments.map(function(a){
+   return '<div class="liveitem"><h4>'+esc(a.type||a.text||'Appointment')+'</h4><small>'+esc(cname(cid(a)))+' · '+esc(appointmentLabel(a))+'</small></div>';
+ }).join(''):'<div class="portal-empty">No appointments.</div>';
+
+ var docs=document.getElementById('proDocuments');
+ if(docs)docs.innerHTML=db.documents.length?db.documents.map(function(d){
+   return '<div class="liveitem"><h4>'+esc(d.name||d.text||'Document')+'</h4><small>'+esc(cname(cid(d)))+(d.date?' · '+esc(d.date):'')+'</small></div>';
+ }).join(''):'<div class="portal-empty">No documents.</div>';
+
+ var bill=document.getElementById('proBilling');
+ if(bill)bill.innerHTML=db.invoices.length?db.invoices.map(function(i){
+   var label=i.text||((i.number||'Invoice')+(i.amount?' · '+i.amount:'')+(i.status?' · '+i.status:''));
+   return '<div class="liveitem"><h4>'+esc(label)+'</h4><small>Client: '+esc(cname(cid(i)))+'</small></div>';
+ }).join(''):'<div class="portal-empty">No invoices.</div>';
+}
+function renderStaff(){
+ if(!db.staff)db.staff=clone(seed.staff);
+ var active=db.staff.filter(function(s){return s.status==='Active'}).length;
+ var admins=db.staff.filter(function(s){return s.status==='Active'&&s.role.indexOf('Administrator')>-1}).length;
+ document.getElementById('staffStats').innerHTML='<div class="livepanel"><small>ACTIVE STAFF</small><h2>'+active+'</h2></div><div class="livepanel"><small>ADMINISTRATORS</small><h2>'+admins+'</h2></div><div class="livepanel"><small>TOTAL ACCOUNTS</small><h2>'+db.staff.length+'</h2></div>';
+ document.getElementById('staffList').innerHTML=db.staff.map(function(s){
+  var inactive=s.status!=='Active';
+  return '<div class="liveitem"><div style="display:flex;justify-content:space-between;gap:12px;align-items:flex-start;flex-wrap:wrap"><div><h4>'+esc(s.name)+'</h4><small>'+esc(s.email)+'</small></div><span class="staffstatus '+(inactive?'inactive':'')+'">'+esc(s.status)+'</span></div><div style="margin-top:8px"><span class="staffrole">'+esc(s.role)+'</span></div><div class="permission-note"><b>Access:</b> '+esc(s.scope)+(s.notes?' · '+esc(s.notes):'')+'</div><div class="staff-actions"><button onclick="changeStaffRole(\''+s.id+'\')">Change Role</button><button class="'+(inactive?'':'danger')+'" onclick="toggleStaff(\''+s.id+'\')">'+(inactive?'Reactivate':'Deactivate')+'</button></div></div>'
+ }).join('');
+}
+function changeStaffRole(id){
+ var s=db.staff.find(function(x){return x.id===id});if(!s)return;
+ var roles=['Partner / Administrator','Lawyer','Paralegal','Secretary / Reception','Accounts'];
+ var current=roles.indexOf(s.role),next=roles[(current+1)%roles.length];
+ if(confirm('Change '+s.name+' from '+s.role+' to '+next+'?')){s.role=next;
+  if(next==='Partner / Administrator')s.scope='All practice matters';
+  else if(next==='Secretary / Reception')s.scope='Appointments & enquiries only';
+  else if(next==='Accounts')s.scope='Billing & invoices only';
+  else s.scope='Assigned matters only';
+  save();renderStaff();
+ }
+}
+function toggleStaff(id){
+ var s=db.staff.find(function(x){return x.id===id});if(!s)return;
+ if(s.role==='Partner / Administrator'&&s.status==='Active'&&db.staff.filter(function(x){return x.status==='Active'&&x.role.indexOf('Administrator')>-1}).length===1){alert('Demo safeguard: keep at least one active administrator.');return}
+ s.status=s.status==='Active'?'Inactive':'Active';save();renderStaff();
+}
+document.getElementById('staffForm').addEventListener('submit',function(ev){
+ ev.preventDefault();
+ var email=document.getElementById('stEmail').value.trim();
+ if(db.staff.some(function(s){return s.email.toLowerCase()===email.toLowerCase()})){alert('A staff account with that email already exists.');return}
+ db.staff.push({id:'st'+Date.now(),name:document.getElementById('stName').value.trim(),email:email,role:document.getElementById('stRole').value,scope:document.getElementById('stScope').value,status:'Active',notes:document.getElementById('stNotes').value.trim()});
+ save();this.reset();renderStaff();alert('Demo invitation created. In the live system, this staff member would receive a secure activation email and create their own password.');
+});
+document.getElementById('matterForm').addEventListener('submit',function(ev){ev.preventDefault();var id='m'+Date.now(),cid=document.getElementById('mClient').value;db.matters.push({id:id,client:cid,ref:document.getElementById('mRef').value.trim(),title:document.getElementById('mTitle').value.trim(),area:document.getElementById('mArea').value,status:document.getElementById('mStatus').value,progress:Number(document.getElementById('mProgress').value)||0,lawyer:document.getElementById('mLawyer').value.trim()});var t=document.getElementById('mUpdate').value.trim();if(t)db.updates.unshift({matter:id,date:new Date().toISOString().slice(0,10),text:t});save();populate();renderLawyer();renderProfessionalPanels();this.reset();document.getElementById('mProgress').value=10;document.getElementById('mLawyer').value='Adv. T. Ndlovu';alert('Matter created. Switch to Client View and select '+cname(cid)+' to see it.')});document.addEventListener('keydown',function(ev){if(ev.key==='Escape'){closeLogin();exitPortal()}});
+</script>
+</body></html>
